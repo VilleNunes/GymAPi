@@ -1,1 +1,20 @@
-API REST para gerenciamento de check-ins em academias, utilizando Fastify, Prisma ORM, Docker e TypeScript.
+📋 Objetivo da API
+
+API tem como objetivo gerenciar check-ins de usuários em academias, permitindo que usuários encontrem academias próximas, realizem check-ins e acompanhem seu histórico de visitas, enquanto garante controle e validação por administradores.
+
+✅ Principais Funcionalidades
+Cadastro e autenticação de usuários;
+
+Consulta ao perfil e histórico de check-ins do usuário logado;
+
+Busca por academias próximas ou pelo nome;
+
+Realização de check-in em academias;
+
+Validação de check-ins;
+
+Cadastro de academias (administradores).
+
+Ferramentas
+
+Fastify, TypeScript, Prisma ORM, bcripyt, zod, docker, vitest, postgresql,jwt

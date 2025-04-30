@@ -11,20 +11,23 @@ interface registerReq {
 }
 
 export class RegisterServices {
-    constructor(private userRepository:IuserInterfaceRepository){}
+    constructor(private userRepository: IuserInterfaceRepository) { }
 
     async execute({ name, email, password }: registerReq) {
 
-        const user = await this.userRepository.findByEmail(email)
+        const userEmail = await this.userRepository.findByEmail(email)
 
-        if (user) {
+        if (userEmail) {
             throw new EmailExist();
         }
 
         const password_hash = await hash(password, 8);
 
-        
 
-        await this.userRepository.create({ nome: name, email, password_hash });
+        const user = await this.userRepository.create({ nome: name, email, password_hash });
+
+        return {
+            user
+        }
     }
 }
