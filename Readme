@@ -1,0 +1,1 @@
+API REST para gerenciamento de check-ins em academias, utilizando Fastify, Prisma ORM, Docker e TypeScript.
