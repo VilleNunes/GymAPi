@@ -30,7 +30,8 @@ export async function registerController(req: FastifyRequest, res: FastifyReply)
                 message: error.message
             });
         }
-        return res.status(500).send(error)
+        
+        throw error;
     }
 
     return res.status(201).send();
