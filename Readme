@@ -17,4 +17,4 @@ Cadastro de academias (administradores).
 
 Ferramentas
 
-Fastify, TypeScript, Prisma ORM, bcripyt, zod, docker, vitest, postgresql,jwt
+Fastify, TypeScript, Prisma ORM, bcripyt, zod, docker, vitest, postgresql,jw
