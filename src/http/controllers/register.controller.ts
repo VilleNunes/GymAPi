@@ -1,5 +1,6 @@
 import { PrismaUsersRepository } from "@/repository/prisma/prisma-users-repository";
 import { EmailExist } from "@/services/error/email-exist-error";
+import { makeRegister } from "@/services/factory/makeRegister";
 import { RegisterServices } from "@/services/register.services";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
@@ -15,8 +16,8 @@ export async function registerController(req: FastifyRequest, res: FastifyReply)
     });
     const { name, password, email } = schemaBody.parse(req.body);
     try {
-        const userRepository = new PrismaUsersRepository();
-        const registerServices = new RegisterServices(userRepository);
+       
+        const registerServices = makeRegister();
 
         await registerServices.execute({
             name,
