@@ -3,6 +3,7 @@ import { PrismaUsersRepository } from "@/repository/prisma/prisma-users-reposito
 import { IuserInterfaceRepository } from "@/repository/user-interface-repository"
 import { hash } from "bcrypt"
 import { EmailExist } from "./error/email-exist-error"
+import { User } from "@prisma/client"
 
 interface registerReq {
     name: string
@@ -10,10 +11,14 @@ interface registerReq {
     password: string
 }
 
+interface registerRes{
+    user:User
+}
+
 export class RegisterServices {
     constructor(private userRepository: IuserInterfaceRepository) { }
 
-    async execute({ name, email, password }: registerReq) {
+    async execute({ name, email, password }: registerReq):Promise<registerRes> {
 
         const userEmail = await this.userRepository.findByEmail(email)
 

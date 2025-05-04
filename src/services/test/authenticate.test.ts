@@ -39,7 +39,7 @@ describe("teste de autenticação de usuário", () => {
             password_hash: await hash("12345678", 8)
         });
 
-        expect(async () => {
+        await expect(async () => {
             await sut.execute({
                 email: "emailErrado@email.com",
                 password: "12345678"
@@ -55,7 +55,7 @@ describe("teste de autenticação de usuário", () => {
             password_hash: await hash("12345678", 8)
         });
 
-        expect(async () => {
+        await expect(async () => {
             await sut.execute({
                 email: "teste@email.com",
                 password: "senhaIncorreta"

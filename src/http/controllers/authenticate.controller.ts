@@ -1,5 +1,5 @@
 import { CredentialInvalid } from "@/services/error/invalid-credential-error";
-import { makeAuthenticate } from "@/services/factory/makeAuthenticate";
+import { makeAuthenticate } from "@/services/factories/makeAuthenticate";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 
