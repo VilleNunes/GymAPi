@@ -1,42 +1,58 @@
-# 🏋️‍♂️ GymAPI – API de Check-ins para Academias
+# 🏋️‍♂️ **GymAPI** – API de Check-ins para Academias
 
-## 📋 Objetivo
-
-A **GymAPI** foi desenvolvida para facilitar o gerenciamento de check-ins em academias, oferecendo funcionalidades como:
-
-- 🧭 Localização de academias próximas  
-- 📍 Realização de check-ins por usuários  
-- 📊 Acompanhamento de histórico de visitas  
-- 🛡️ Validação e controle por administradores  
+API RESTful para gerenciamento de check-ins em academias, com recursos de geolocalização, autenticação de usuários e validação por administradores.
 
 ---
 
-## ✅ Funcionalidades Principais
+## 📌 **Objetivo**
 
-- 🔐 **Cadastro e autenticação de usuários**  
-- 👤 **Consulta de perfil e histórico de check-ins**  
-- 📌 **Busca por academias próximas ou por nome**  
-- 📥 **Check-in em academias**  
-- ✔️ **Validação de check-ins (admin)**  
-- 🏢 **Cadastro de academias (restrito a administradores)**
+A **GymAPI** foi criada para facilitar e automatizar a gestão de acesso em academias, oferecendo funcionalidades modernas como:
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- 🚀 **Fastify** – Framework web rápido e eficiente  
-- 🧠 **TypeScript** – Tipagem estática para JavaScript  
-- 🛢️ **Prisma ORM** – Mapeamento objeto-relacional  
-- 🔒 **bcrypt** – Hash de senhas  
-- 📏 **Zod** – Validação de dados  
-- 🐳 **Docker** – Contêineres para ambiente de desenvolvimento  
-- 🧪 **Vitest** – Testes automatizados  
-- 🐘 **PostgreSQL** – Banco de dados relacional  
-- 🪪 **JWT** – Autenticação via tokens
+- 🧭 Localização de academias próximas ao usuário  
+- 📍 Realização de check-ins com validação  
+- 📊 Consulta ao histórico de visitas  
+- 🛡️ Controle administrativo de registros e academias
 
 ---
 
-## 🧑‍💻 Desenvolvedor
+## ✅ **Funcionalidades Principais**
 
-**Ville Nunes da Silva**  
-🗓️ 2025
+- 🔐 Cadastro e autenticação de usuários (via JWT)  
+- 👤 Consulta de perfil e histórico pessoal de check-ins  
+- 🔎 Busca por academias (por proximidade ou nome)  
+- 📥 Realização de check-in em uma academia  
+- ✔️ Validação manual de check-ins por administradores  
+- 🏢 Cadastro e gerenciamento de academias (admin only)
+
+---
+
+## 🛠️ **Tecnologias Utilizadas**
+
+| Tecnologia     | Finalidade                          |
+|----------------|-------------------------------------|
+| **Fastify**    | Framework web ultra rápido          |
+| **TypeScript** | Tipagem estática para maior robustez|
+| **Prisma ORM** | Abstração e manipulação de dados    |
+| **PostgreSQL** | Banco de dados relacional           |
+| **Zod**        | Validação de schemas                |
+| **bcrypt**     | Criptografia de senhas              |
+| **JWT**        | Autenticação baseada em tokens      |
+| **Docker**     | Contêinerização e deploy            |
+| **Vitest**     | Testes unitários                    |
+
+---
+
+## 🚀 **Como rodar o projeto (resumo)**
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/gymapi.git
+cd gymapi
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente (.env)
+
+# Rode a aplicação em desenvolvimento
+npm run dev
