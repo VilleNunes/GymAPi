@@ -1,20 +1,42 @@
-📋 Objetivo da API
+# 🏋️‍♂️ GymAPI – API de Check-ins para Academias
 
-API tem como objetivo gerenciar check-ins de usuários em academias, permitindo que usuários encontrem academias próximas, realizem check-ins e acompanhem seu histórico de visitas, enquanto garante controle e validação por administradores.
+## 📋 Objetivo
 
-✅ Principais Funcionalidades
-Cadastro e autenticação de usuários;
+A **GymAPI** foi desenvolvida para facilitar o gerenciamento de check-ins em academias, oferecendo funcionalidades como:
 
-Consulta ao perfil e histórico de check-ins do usuário logado;
+- 🧭 Localização de academias próximas  
+- 📍 Realização de check-ins por usuários  
+- 📊 Acompanhamento de histórico de visitas  
+- 🛡️ Validação e controle por administradores  
 
-Busca por academias próximas ou pelo nome;
+---
 
-Realização de check-in em academias;
+## ✅ Funcionalidades Principais
 
-Validação de check-ins;
+- 🔐 **Cadastro e autenticação de usuários**  
+- 👤 **Consulta de perfil e histórico de check-ins**  
+- 📌 **Busca por academias próximas ou por nome**  
+- 📥 **Check-in em academias**  
+- ✔️ **Validação de check-ins (admin)**  
+- 🏢 **Cadastro de academias (restrito a administradores)**
 
-Cadastro de academias (administradores).
+---
 
-Ferramentas
+## 🛠️ Tecnologias Utilizadas
 
-Fastify, TypeScript, Prisma ORM, bcripyt, zod, docker, vitest, postgresql,jw
+- 🚀 **Fastify** – Framework web rápido e eficiente  
+- 🧠 **TypeScript** – Tipagem estática para JavaScript  
+- 🛢️ **Prisma ORM** – Mapeamento objeto-relacional  
+- 🔒 **bcrypt** – Hash de senhas  
+- 📏 **Zod** – Validação de dados  
+- 🐳 **Docker** – Contêineres para ambiente de desenvolvimento  
+- 🧪 **Vitest** – Testes automatizados  
+- 🐘 **PostgreSQL** – Banco de dados relacional  
+- 🪪 **JWT** – Autenticação via tokens
+
+---
+
+## 🧑‍💻 Desenvolvedor
+
+**Ville Nunes da Silva**  
+🗓️ 2025
